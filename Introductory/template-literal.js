@@ -4,5 +4,5 @@ let y = 4;
 // Declare a string 'solution' that when printed to the console reads like:
 // "The sum of <x> and <y> is <x + y>"
 // ADD CODE BELOW
-const solution = `The sum of ${x} and ${y} is ${x + y}`
-console.log(solution)
+const solution = `The sum of ${x} and ${y} is ${x + y}`;
+console.log(solution);

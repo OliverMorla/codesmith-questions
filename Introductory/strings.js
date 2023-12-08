@@ -1,13 +1,12 @@
 // Uncomment the lines below to see examples of strings
-console.log('A string can be written inside of single quotes.');
+console.log("A string can be written inside of single quotes.");
 console.log("It can also be written inside of double quotes.");
 console.log(`Backticks work, too.`);
 
 // ADD CODE BELOW
-var mySingleString = 'single';
+var mySingleString = "single";
 var myDoubleString = "double";
-var myBackString = `backticks`
-
+var myBackString = `backticks`;
 
 // Uncomment the line below to check your work!
 console.log(mySingleString);

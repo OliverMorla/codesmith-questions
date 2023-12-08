@@ -3,7 +3,7 @@ console.log(10 + 5);
 console.log("10" + 5);
 console.log(5 + "10");
 
-// Only similar types can be affected by the " + " operator. 
+// Only similar types can be affected by the " + " operator.
 
 /*
 

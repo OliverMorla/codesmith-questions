@@ -4,8 +4,7 @@ var firstName = "John";
 // console.log("Hi, " + firstName)
 
 // ADD CODE HERE
-var lastName = "Doe"
-
+var lastName = "Doe";
 
 // Uncomment the line below to check your work!
 console.log("Hi, " + firstName + " " + lastName);

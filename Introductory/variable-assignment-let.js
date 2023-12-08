@@ -6,7 +6,7 @@ let favFood = "tacos";
 console.log("My favorite food is " + favFood);
 
 // ADD CODE HERE
-favFood = "pizza"
+favFood = "pizza";
 
 // Uncomment the line below to check your work!
 console.log("No, but really, my favorite food is " + favFood);
