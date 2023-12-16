@@ -3,10 +3,13 @@ function addS(word) {
   return word + "s";
 }
 
+// Approach 2
 // const addS = (word) => word + "s";
 
+// Approach 3
 // const addS = (word) => word.concat("s");
 
+// Approach 4
 // const addS = (word) => `${word}s`;
 
 // Uncomment these to check your work!

@@ -1,7 +1,16 @@
-function droids(arr: string[]) {
+function droids(arr) {
   let result = "";
+  let element;
 
-  for (let i = 0; arr.length; i++) {}
+  for (let i = 0; i < arr.length; i++) {
+    element = arr[i];
+    if (element === "Droids") {
+      result = "Found Droids!";
+    } else {
+      result = "These are not the droids you're looking for.";
+    }
+  }
+  return result;
 }
 
 // Uncomment these to check your work!

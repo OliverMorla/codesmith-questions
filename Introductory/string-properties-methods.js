@@ -1,5 +1,5 @@
 let hometown = "New York City";
-let favAlbum = "The Rise and Fall of Ziggy Stardust and the Spiders From Mars"
+let favAlbum = "The Rise and Fall of Ziggy Stardust and the Spiders From Mars";
 
 // ADD CODE BELOW
 const count = hometown.length;

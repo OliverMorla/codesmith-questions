@@ -17,7 +17,6 @@ const isFalse = false;
 // ADD CODE BELOW (isTrueNotFalse)
 const isTrueNotFalse = isTrue !== isFalse;
 
-
 // Uncomment these to check your work!
 console.log("Is 2 < 5342?");
 console.log(isSmaller);

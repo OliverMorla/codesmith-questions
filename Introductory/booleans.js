@@ -9,4 +9,3 @@ let codingIsTooHard = false;
 // CONSOLE LOG RESULTS
 console.log("iLoveCoding: " + iLoveCoding);
 console.log("codingIsTooHard: " + codingIsTooHard);
-
