@@ -11,8 +11,8 @@
 function eitherCallback(callback1, callback2) {
   // callback1 = integerSquareRoot = (n) => Math.sqrt(n) % 1 === 0
   // callback2 = over100 = (n) => n > 100;
-  console.log(callback1)
-  console.log(callback2)
+  console.log(callback1);
+  console.log(callback2);
 
   return (el, i, array) => {
     if (callback1(el) || callback2(el)) {

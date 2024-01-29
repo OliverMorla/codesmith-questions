@@ -3,16 +3,6 @@
     Part 1
     Create a function forEach which takes an array and a callback, and runs the callback on each element of the array. 
     forEach does not return anything. Please do not use the native forEach or map method.
-
-    let alphabet = '';
-    const letters = ['a', 'b', 'c', 'd'];
-    
-    forEach(letters, function(char) {
-        alphabet += char;
-    
-    });
-    
-    console.log(alphabet); //prints 'abcd'
     
     Part 2
     Now let's rebuild map from the previous challenge. This time instead of using a for loop, you're going to use the forEach we just created.
@@ -31,14 +21,14 @@ const forEach = (arr, callback) => {
 
 // Create a function called map that takes two inputs. The first input is an array of numbers (a list of numbers). The second input, 'callback', is a function that is applied to each element of the array (inside of the function 'map').
 const map = (numArr, callback) => {
-    const newArr = []
-    
-    // Using for-each we just created to iterate through each element and call 'callback' function on each element
-    forEach(numArr, (i) => {
-        newArr.push(callback(i))
-    });
+  const newArr = [];
 
-    return newArr;
+  // Using for-each we just created to iterate through each element and call 'callback' function on each element
+  forEach(numArr, (i) => {
+    newArr.push(callback(i));
+  });
+
+  return newArr;
 };
 
 // Uncomment these to check your work!
