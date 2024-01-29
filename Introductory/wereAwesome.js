@@ -1,5 +1,10 @@
+/*
+    Write a function wereAwesome that takes you and your pair programming partner's name and returns the string "[your buddy's name] and [you] are awesome!"
+*/
+
+// Approach 1 - Function declaration with parameters you and yourBuddy
 function wereAwesome(you, yourBuddy) {
-  // ADD CODE HERE
+  // Return a template literal with yourBuddy and you concatenated
   return `${yourBuddy} and ${you} are awesome!`;
 }
 

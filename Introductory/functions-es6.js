@@ -1,7 +1,5 @@
 /*
-
-For this challenge, convert the function myJob from ES5 syntax to arrow function syntax.
-
+    For this challenge, convert the function myJob from ES5 syntax to arrow function syntax.
 */
 
 // function myJob(name, profession) {

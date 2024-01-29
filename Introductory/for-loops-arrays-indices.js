@@ -10,11 +10,12 @@ const bios = [];
 // 'My name is Jamie Lannister and I am from Kings Landing'
 
 // ADD CODE HERE
-for (let i = 0; i < 3; i++) { //assumming that all 3 arrays have length of 3.
+for (let i = 0; i < 3; i++) {
+  //assumming that all 3 arrays have length of 3.
   bios.push(
     `My name is ${firstNames[i]} ${lastNames[i]} and I am from ${places[i]}`
   );
 
   // View bio
-  console.log(bios[i])
+  console.log(bios[i]);
 }

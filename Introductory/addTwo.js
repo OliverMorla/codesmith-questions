@@ -1,18 +1,24 @@
-// ADD CODE HERE
+/*
+    Create a function addTwo that accepts a number, and returns the number plus 2.
+*/
+
+// Approach 1 - Function Declaration using + operator:
 function addTwo(num) {
   return num + 2;
 }
 
+// Approach 2 - Arrow Function without using return keyword and {}:
 // const addTwo = (num) => num + 2;
 
-// High Order Function
+// Approach 3 - Curried Function returning an arrow function:
 // function add() {
 //   return (num) => {
 //     return num + 2;
 //   };
 // }
 
-// const addTwo = add()
+// Uncomment these to check your work for the Curried Function!
+// const addTwo = add();
 // const result = addTwo(2);
 
 // Uncomment these to check your work!

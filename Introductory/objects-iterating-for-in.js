@@ -9,10 +9,10 @@ const objToArray = [];
 // ADD CODE HERE
 
 for (const key in checkObj) {
-    // if num is >= 2 then add to array
-    if(checkObj[key] >= 2){
-        objToArray.push(checkObj[key])
-    }
+  // if num is >= 2 then add to array
+  if (checkObj[key] >= 2) {
+    objToArray.push(checkObj[key]);
+  }
 }
 
-console.log(objToArray)
+console.log(objToArray);
