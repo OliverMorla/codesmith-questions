@@ -1,7 +1,5 @@
 /*
-
     Add code to the functions func1 and func2 in the places marked "ADD CODE HERE" in order to achieve the desired console logs.
-    
 */
 
 function filterArray(array, callback) {
