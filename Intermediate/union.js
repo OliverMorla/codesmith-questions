@@ -4,10 +4,25 @@
     the first input array. BONUS - Use reduce!
 */
 
-const union = (arr) => {
-  let newArr = [];
+// const union = (arr) => {
+//   const newArr = arr.flat(1);
+//   return newArr.filter((el, i) => newArr.indexOf(el) === i);
+// };
 
-  return newArr;
+const union = (arrays) => {
+  const result = [];
+
+  const newArr = arrays.reduce((acc, curr) => {
+    return acc.concat(curr);
+  });
+
+  newArr.forEach((el, i, arr) => {
+    if (arr.indexOf(el) === i) {
+      result.push(el);
+    }
+  });
+
+  return result;
 };
 
 // Uncomment these to check your work!

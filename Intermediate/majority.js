@@ -4,8 +4,24 @@
     the majority of the return values from the callback are true. If the number of true returns is equal to the 
     number of false returns, majority should return false.
 */
+const majority = (array, callback) => {
+  let totalEven = 0,
+    totalOdd = 0;
+
+  array.forEach((el, i) => {
+    if (callback(el)) {
+      totalOdd++;
+    } else {
+      totalEven++;
+    }
+  });
+
+  return totalOdd > totalEven ? true : false;
+};
 
 // Uncomment these to check your work!
-// const isOdd = function(num) { return num % 2 === 1; };
-// console.log(majority([1, 2, 3, 4, 5], isOdd)); // should log: true
-// console.log(majority([2, 3, 4, 5], isOdd)); // should log: false
+const isOdd = function (num) {
+  return num % 2 === 1;
+};
+console.log(majority([1, 2, 3, 4, 5], isOdd)); // should log: true
+console.log(majority([2, 3, 4, 5], isOdd)); // should log: false

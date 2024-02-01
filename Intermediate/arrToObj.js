@@ -5,10 +5,14 @@
 */
 
 function arrToObj(array, callback) {
-  // ADD CODE HERE
+  const obj = {};
+  array.forEach((el, i) => {
+    obj[`${el}`] = callback(el);
+  });
+  return obj;
 }
 
 // Uncomment these to check your work!
-// const arrOfStrings = ['beer', 'glue'];
-// const capitalize = str => str.toUpperCase();
-// console.log(arrToObj(arrOfStrings, capitalize)); // should log: { beer: 'BEER', glue: 'GLUE' }
+const arrOfStrings = ["beer", "glue"];
+const capitalize = (str) => str.toUpperCase();
+console.log(arrToObj(arrOfStrings, capitalize)); // should log: { beer: 'BEER', glue: 'GLUE' }

@@ -4,8 +4,12 @@
     This function should not mutate the passed-in arrays.
 */
 
+const joinAndMap = (array1, array2, callback) => {
+  return array1.concat(array2).map((el) => callback(el));
+};
+
 // Uncomment these to check your work!
-// const arrRed = ['strawberry', 'cherry', 'wine'];
-// const arrBlue = ['blueberry', 'sky', 'ocean'];
-// const capitalize = str => str.toUpperCase();
-// console.log(joinAndMap(arrRed, arrBlue, capitalize)); // should log: ['STRAWBERRY', 'CHERRY', 'WINE', 'BLUEBERRY', 'SKY', 'OCEAN']
+const arrRed = ["strawberry", "cherry", "wine"];
+const arrBlue = ["blueberry", "sky", "ocean"];
+const capitalize = (str) => str.toUpperCase();
+console.log(joinAndMap(arrRed, arrBlue, capitalize)); // should log: ['STRAWBERRY', 'CHERRY', 'WINE', 'BLUEBERRY', 'SKY', 'OCEAN']

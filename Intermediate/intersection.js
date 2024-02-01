@@ -2,33 +2,38 @@
     Construct a function intersection that compares input arrays and returns a new array with elements found in all of the inputs. BONUS - Use reduce!
 */
 
-const intersection = (arrays) => {
-  // If no arrays are provided or there's only one array, return it as is
-  if (!arrays || arrays.length <= 1) return arrays;
+// const intersection = (arr) => {
+//   const firstArray = arr[0];
+//   const newArr = [];
 
-  const resultArray = [];
-  const firstArray = arrays[0];
+//   for (let i = 0; i < firstArray.length; i++) {
+//     let isCommon = true;
+//     let element = firstArray[i];
 
-  // Iterate over each element of the first array
-  for (let i = 0; i < firstArray.length; i++) {
-    let element = firstArray[i];
-    let isCommon = true;
+//     for (let j = 1; j < arr.length; j++) {
+//       if (!arr[j].includes(element)) {
+//         isCommon = false;
+//       }
+//     }
 
-    // Check if this element is in all other arrays
-    for (let j = 1; j < arrays.length; j++) {
-      if (!arrays[j].includes(element)) {
-        isCommon = false;
-        break;
-      }
-    }
+//     if (isCommon) {
+//       newArr.push(firstArray[i]);
+//     }
+//   }
 
-    // If the element is common to all arrays, add it to the result
-    if (isCommon) {
-      resultArray.push(element);
-    }
-  }
+//   return newArr;
+// };
 
-  return resultArray;
+const intersection = (arr) => {
+  return arr.reduce((acc, currentArray) => {
+    console.log("acc: " + acc);
+    console.log("currentArray: " + currentArray);
+    return acc.filter((el) => {
+      console.log("filterFunctionEl: " + el);
+      console.log("exist: " + currentArray.includes(el) + " in " + currentArray)
+      return currentArray.includes(el);
+    });
+  });
 };
 
 // Uncomment these to check your work!
