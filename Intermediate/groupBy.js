@@ -5,23 +5,22 @@
 */
 
 const groupBy = (array, callback) => {
-    const object = {};
-    
-    array.forEach((el, i) => {
-      if (object[callback(el)]) {
-        object[callback(el)].push(el);
-      } else {
-        object[callback(el)] = [el];
-      }
-    });
-  
-    return object;
-  };
-  
-  // Uncomment these to check your work!
-  const decimals = [1.3, 2.1, 2.4];
-  const floored = function (num) {
-    return Math.floor(num);
-  };
-  console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }
-  
+  const object = {};
+
+  array.forEach((el, i) => {
+    if (object[callback(el)]) {
+      object[callback(el)].push(el);
+    } else {
+      object[callback(el)] = [el];
+    }
+  });
+
+  return object;
+};
+
+// Uncomment these to check your work!
+const decimals = [1.3, 2.1, 2.4];
+const floored = function (num) {
+  return Math.floor(num);
+};
+console.log(groupBy(decimals, floored)); // should log: { 1: [1.3], 2: [2.1, 2.4] }

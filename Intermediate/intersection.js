@@ -26,11 +26,7 @@
 
 const intersection = (arr) => {
   return arr.reduce((acc, currentArray) => {
-    console.log("acc: " + acc);
-    console.log("currentArray: " + currentArray);
     return acc.filter((el) => {
-      console.log("filterFunctionEl: " + el);
-      console.log("exist: " + currentArray.includes(el) + " in " + currentArray)
       return currentArray.includes(el);
     });
   });
